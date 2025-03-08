@@ -13,7 +13,8 @@ https://docs.google.com/document/d/14xdhZUC8C5jVgLjoUQZYsCdEW8vlUrS2fYlTF0M1AsA/
 
 The goal is to use an ESP8266 (and ESP32 depending on mood) to deauthenticate
 people from a vulnerable Wi-Fi system and set up its evil twin using an
-easy-and-quick to use UI.
+easy-and-quick to use UI. This is a handheld device with functionality to
+operate it with buttons and a screen.
 
 Following Wi-Fi protocols are vulnerable:
 - WEP (Wired Equivalent Privacy): Extremely vulnerable
