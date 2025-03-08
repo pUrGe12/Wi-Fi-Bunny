@@ -1,1 +1,30 @@
-Idea goes here
+
+			:::::::::  :::    ::: ::::    ::: ::::    ::: :::   :::
+			:+:    :+: :+:    :+: :+:+:   :+: :+:+:   :+: :+:   :+:
+			+:+    +:+ +:+    +:+ :+:+:+  +:+ :+:+:+  +:+  +:+ +:+ 
+			+#++:++#+  +#+    +:+ +#+ +:+ +#+ +#+ +:+ +#+   +#++:  
+			+#+    +#+ +#+    +#+ +#+  +#+#+# +#+  +#+#+#    +#+   
+			#+#    #+# #+#    #+# #+#   #+#+# #+#   #+#+#    #+#   
+			#########   ########  ###    #### ###    ####    ###   
+
+
+Link:
+https://docs.google.com/document/d/14xdhZUC8C5jVgLjoUQZYsCdEW8vlUrS2fYlTF0M1AsA/edit?usp=sharing
+
+The goal is to use an ESP8266 (and ESP32 depending on mood) to deauthenticate
+people from a vulnerable Wi-Fi system and set up its evil twin using an
+easy-and-quick to use UI.
+
+Following Wi-Fi protocols are vulnerable:
+- WEP (Wired Equivalent Privacy): Extremely vulnerable
+- WPA (Wi-Fi Protected Access): No protection against management frame changes
+- WPA2: No authentication on management frames
+
+WPA3 introduces PMF (Protected Management Frames), but not all devices enforce
+PMF strictly and not all hardware is compatible with this.
+
+The Wi-Fi deauthentication frame has a frame subtype value of 0xC0. Recent updates
+to ESP-IDF and Arduino IDE have explicitly disabled support for sending raw Wi-Fi
+management frames (including deauth frames) for security reasons. Using custom
+firmware for ESP8266 allows us to send raw Wi-Fi and with Bunny, it also allows for
+an Access point setup.

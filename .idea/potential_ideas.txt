@@ -1,0 +1,21 @@
+Possible ways to do this:
+
+1. Write C and flash using ESP-IDF (boring)
+2. Use ESP8266 Non-OS SDK (not-so-boring)
+3. Write it in assembly and flash with ESP-IDF (fun)
+
+Non-OS SDK provides a bunch of low-level C functions that we can
+use for Wi-Fi without a string RTOS overhead.
+
+Challenges with ESP8266
+- Low memory (~50KB usable)
+- Watchdog timers
+
+ESP8266 has two watchdog timers:
+1. Software watchdog
+	- Resets ESP if a function runs for more than 3.2 seconds
+	- Kicked using `system_soft_wdt_feed()`
+2. Hardware watchdog
+	- Lower-level timer, resets if no kicks for 6 seconds
+
+To bypass watchdog resets, feed it regularly or add delays.

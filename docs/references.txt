@@ -1,3 +1,6 @@
 https://github.com/Jeija/esp32-80211-tx
 https://www.reddit.com/r/WillStunForFood/comments/ot8vzl/finally_got_the_esp32_to_send_deauthentication/
 https://github.com/justcallmekoko/ESP32Marauder 
+https://github.com/esp8266
+https://github.com/SpacehuhnTech/esp8266_deauther
+https://purge12.github.io/blog/creating-a-esp32-wifi-deauther/
