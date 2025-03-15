@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/CMakeFiles/bootloader
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/CMakeFiles/bootloader.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/CMakeFiles/bootloader-complete.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/purge/Desktop/Wi-Fi-Bunny/bunny/scan/bssid_scan/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
