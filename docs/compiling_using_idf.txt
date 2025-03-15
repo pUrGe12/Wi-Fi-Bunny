@@ -1,0 +1,24 @@
+To build a C++ code for ESPs follow this guide
+
+1. Create a file (say named 'test.c')
+2. Create a directory called `main` and move "test_scan.c" inside
+`main`.
+3. Create a 'CMakeLists.txt' file inside the main directory
+and save the following in that.
+```
+idf_component_register(SRCS "test_scan.c"
+                    INCLUDE_DIRS ".")
+```
+4. Create a 'CMakeLists.txt' file in `../main` (from the test_scan.c
+file's directory) and save the following in that.
+```
+cmake_minimum_required(VERSION 3.16)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(test_scan)
+```
+5. Build the project by running
+```
+idf.py build
+```
+in the root
